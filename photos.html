@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Pitt Sailbot - Contact Us</title>
+		<title>Pitt Sailbot - Photos</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
@@ -28,23 +28,33 @@
 				<ul class="links">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="contact.html">Contact Us</a></li>
-					<li><a href="elements.html">Elements</a></li>
+					<li><a href="Photos.html">Photos</a></li>
 					
 				</ul>
 			</nav>
 
 		<!-- Heading -->
 			<div id="heading" >
-				<h1>Contact Us</h1>
+				<h1>Photos</h1>
 			</div>
 
 		<!-- Main -->
+
 			<section id="main" class="wrapper">
 				<div class="inner">
-					<div class="content">
+					<div id="imgs" class="content">
+						<script>
+							for (var i = 19; i >= 0; i--) {
+								var img = document.createElement("img");
+								img.src = `images/gallery/${i}.jpg`;
+								img.style = "padding-right: 10px; padding-bottom: 5px;"
+								console.log(`images/image0${i}.jpg`)
+								img.height = "300"
+								var src = document.getElementById("imgs");
+								src.appendChild(img);
+							}
+						</script>
 
-						<img src="images/image.jpg" alt="img">
-						
 					</div>
 				</div>
 			</section>
